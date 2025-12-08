@@ -12,6 +12,7 @@ import {t, tct} from 'sentry/locale';
 import {space} from 'sentry/styles/space';
 import type {SelectValue} from 'sentry/types/core';
 import {
+  DataConditionHandlerGroupType,
   DataConditionType,
   type AttributeSubfilter,
   type Subfilter,
@@ -145,20 +146,44 @@ interface BranchProps {
 }
 
 function Branch({lastChild}: BranchProps) {
+  const {handlerGroup} = useDataConditionNodeContext();
+
   return (
-    <svg
+    <BranchSvg
       width="26"
       height="38"
       viewBox="0 0 26 38"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      handlerGroup={handlerGroup}
     >
-      <line x1="0.5" x2="0.5" y2={lastChild ? '19' : '38'} stroke="#80708F" />
-      <circle cx="23.5" cy="18.5" r="2.5" fill="#80708F" />
-      <line x1="22" y1="18.5" x2="1" y2="18.5" stroke="#80708F" />
-    </svg>
+      <line x1="0.5" x2="0.5" y2={lastChild ? '19' : '38'} />
+      <circle cx="23.5" cy="18.5" r="2.5" />
+      <line x1="22" y1="18.5" x2="1" y2="18.5" />
+    </BranchSvg>
   );
 }
+
+const BranchSvg = styled('svg')<{handlerGroup?: DataConditionHandlerGroupType}>`
+  line {
+    stroke: ${p =>
+      p.handlerGroup === DataConditionHandlerGroupType.WORKFLOW_TRIGGER
+        ? p.theme.green400
+        : p.handlerGroup === DataConditionHandlerGroupType.ACTION_FILTER
+          ? p.theme.yellow400
+          : p.theme.blue400};
+    stroke-width: 1;
+  }
+
+  circle {
+    fill: ${p =>
+      p.handlerGroup === DataConditionHandlerGroupType.WORKFLOW_TRIGGER
+        ? p.theme.green400
+        : p.handlerGroup === DataConditionHandlerGroupType.ACTION_FILTER
+          ? p.theme.yellow400
+          : p.theme.blue400};
+  }
+`;
 
 function ComparisonTypeField() {
   const {subfilter, subfilter_id, onUpdate} = useSubfilterContext();

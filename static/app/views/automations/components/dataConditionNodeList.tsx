@@ -160,6 +160,7 @@ export default function DataConditionNodeList({
                 condition,
                 condition_id: condition.id,
                 onUpdate: params => updateCondition(condition.id, params),
+                handlerGroup,
               }}
             >
               <Node />

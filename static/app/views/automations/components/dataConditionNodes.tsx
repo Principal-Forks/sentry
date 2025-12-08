@@ -90,6 +90,7 @@ interface DataConditionNodeProps {
   condition: DataCondition;
   condition_id: string;
   onUpdate: (params: {comparison?: any; type?: DataConditionType}) => void;
+  handlerGroup?: import('sentry/types/workflowEngine/dataConditions').DataConditionHandlerGroupType;
 }
 
 export const DataConditionNodeContext = createContext<DataConditionNodeProps | null>(
