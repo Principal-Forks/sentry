@@ -1,0 +1,562 @@
+{
+  "vv": {
+    "name": "Frontend Architecture",
+    "version": "1.0.0",
+    "nodeTypes": {
+      "ReactApp": {
+        "label": "React App",
+        "icon": "Layout",
+        "color": "5"
+      },
+      "Router": {
+        "label": "React Router",
+        "icon": "Route",
+        "color": "5"
+      },
+      "Views": {
+        "label": "Views",
+        "icon": "Eye",
+        "color": "5"
+      },
+      "Components": {
+        "label": "Components",
+        "icon": "Box",
+        "color": "5"
+      },
+      "CoreComponents": {
+        "label": "Core Components",
+        "icon": "Package",
+        "color": "4"
+      },
+      "ReactQuery": {
+        "label": "React Query",
+        "icon": "Database",
+        "color": "2"
+      },
+      "Reflux": {
+        "label": "Reflux Stores",
+        "icon": "Store",
+        "color": "2"
+      },
+      "APIClient": {
+        "label": "API Client",
+        "icon": "Globe",
+        "color": "3"
+      },
+      "Utils": {
+        "label": "Utils",
+        "icon": "Tool",
+        "color": "6"
+      },
+      "Types": {
+        "label": "Types",
+        "icon": "FileType",
+        "color": "6"
+      },
+      "Actions": {
+        "label": "Action Creators",
+        "icon": "Zap",
+        "color": "2"
+      },
+      "Rspack": {
+        "label": "Rspack",
+        "icon": "Package",
+        "color": "3"
+      },
+      "Jest": {
+        "label": "Jest + RTL",
+        "icon": "TestTube",
+        "color": "1"
+      },
+      "Emotion": {
+        "label": "Emotion",
+        "icon": "Palette",
+        "color": "4"
+      },
+      "DjangoAPI": {
+        "label": "Django REST API",
+        "icon": "Server",
+        "color": "4"
+      }
+    },
+    "edgeTypes": {
+      "renders": {
+        "label": "Renders",
+        "style": "solid",
+        "color": "5"
+      },
+      "uses": {
+        "label": "Uses",
+        "style": "solid",
+        "color": "4"
+      },
+      "api_call": {
+        "label": "API Request",
+        "style": "solid",
+        "color": "3"
+      },
+      "state_update": {
+        "label": "State Update",
+        "style": "dashed",
+        "color": "2"
+      },
+      "builds": {
+        "label": "Builds",
+        "style": "dotted",
+        "color": "3"
+      },
+      "tests": {
+        "label": "Tests",
+        "style": "dotted",
+        "color": "1"
+      },
+      "styles": {
+        "label": "Styles",
+        "style": "dotted",
+        "color": "4"
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": "rspack",
+      "type": "text",
+      "x": 269,
+      "y": -35,
+      "width": 180,
+      "height": 80,
+      "vv": {
+        "nodeType": "Rspack",
+        "shape": "rectangle",
+        "fill": "#eab308",
+        "stroke": "#eab308"
+      },
+      "color": "3",
+      "text": "Rspack"
+    },
+    {
+      "id": "react_app",
+      "type": "text",
+      "x": 268,
+      "y": 140,
+      "width": 180,
+      "height": 80,
+      "vv": {
+        "nodeType": "ReactApp",
+        "shape": "rectangle",
+        "fill": "#06b6d4",
+        "stroke": "#06b6d4"
+      },
+      "color": "5",
+      "text": "React Frontend"
+    },
+    {
+      "id": "router",
+      "type": "text",
+      "x": 267,
+      "y": 305,
+      "width": 180,
+      "height": 80,
+      "vv": {
+        "nodeType": "Router",
+        "shape": "rectangle",
+        "fill": "#06b6d4",
+        "stroke": "#06b6d4"
+      },
+      "color": "5",
+      "text": "React Router"
+    },
+    {
+      "id": "views",
+      "type": "text",
+      "x": 70,
+      "y": 462,
+      "width": 180,
+      "height": 80,
+      "vv": {
+        "nodeType": "Views",
+        "shape": "rectangle",
+        "fill": "#06b6d4",
+        "stroke": "#06b6d4"
+      },
+      "color": "5",
+      "text": "Views"
+    },
+    {
+      "id": "components",
+      "type": "text",
+      "x": 507,
+      "y": 639,
+      "width": 180,
+      "height": 80,
+      "vv": {
+        "nodeType": "Components",
+        "shape": "rectangle",
+        "fill": "#06b6d4",
+        "stroke": "#06b6d4"
+      },
+      "color": "5",
+      "text": "Components"
+    },
+    {
+      "id": "core_components",
+      "type": "text",
+      "x": 498,
+      "y": 833,
+      "width": 200,
+      "height": 80,
+      "vv": {
+        "nodeType": "CoreComponents",
+        "shape": "rectangle",
+        "fill": "#22c55e",
+        "stroke": "#22c55e"
+      },
+      "color": "4",
+      "text": "Core Components"
+    },
+    {
+      "id": "react_query",
+      "type": "text",
+      "x": -149,
+      "y": 686,
+      "width": 180,
+      "height": 80,
+      "vv": {
+        "nodeType": "ReactQuery",
+        "shape": "rectangle",
+        "fill": "#f97316",
+        "stroke": "#f97316"
+      },
+      "color": "2",
+      "text": "React Query"
+    },
+    {
+      "id": "reflux",
+      "type": "text",
+      "x": 544,
+      "y": 1189,
+      "width": 180,
+      "height": 80,
+      "vv": {
+        "nodeType": "Reflux",
+        "shape": "rectangle",
+        "fill": "#f97316",
+        "stroke": "#f97316"
+      },
+      "color": "2",
+      "text": "Reflux Stores"
+    },
+    {
+      "id": "actions",
+      "type": "text",
+      "x": 262,
+      "y": 932,
+      "width": 180,
+      "height": 80,
+      "vv": {
+        "nodeType": "Actions",
+        "shape": "rectangle",
+        "fill": "#f97316",
+        "stroke": "#f97316"
+      },
+      "color": "2",
+      "text": "Action Creators"
+    },
+    {
+      "id": "api_client",
+      "type": "text",
+      "x": 119,
+      "y": 1184,
+      "width": 180,
+      "height": 80,
+      "vv": {
+        "nodeType": "APIClient",
+        "shape": "rectangle",
+        "fill": "#eab308",
+        "stroke": "#eab308"
+      },
+      "color": "3",
+      "text": "API Client"
+    },
+    {
+      "id": "django_api",
+      "type": "text",
+      "x": 120,
+      "y": 1321,
+      "width": 180,
+      "height": 80,
+      "vv": {
+        "nodeType": "DjangoAPI",
+        "shape": "rectangle",
+        "fill": "#22c55e",
+        "stroke": "#22c55e"
+      },
+      "color": "4",
+      "text": "Django REST API"
+    },
+    {
+      "id": "utils",
+      "type": "text",
+      "x": 90,
+      "y": 849,
+      "width": 150,
+      "height": 80,
+      "vv": {
+        "nodeType": "Utils",
+        "shape": "rectangle",
+        "fill": "#a855f7",
+        "stroke": "#a855f7"
+      },
+      "color": "6",
+      "text": "Utils"
+    },
+    {
+      "id": "types",
+      "type": "text",
+      "x": 220,
+      "y": 696,
+      "width": 150,
+      "height": 80,
+      "vv": {
+        "nodeType": "Types",
+        "shape": "rectangle",
+        "fill": "#a855f7",
+        "stroke": "#a855f7"
+      },
+      "color": "6",
+      "text": "Types"
+    },
+    {
+      "id": "emotion",
+      "type": "text",
+      "x": 795,
+      "y": 833,
+      "width": 150,
+      "height": 80,
+      "vv": {
+        "nodeType": "Emotion",
+        "shape": "rectangle",
+        "fill": "#22c55e",
+        "stroke": "#22c55e"
+      },
+      "color": "4",
+      "text": "Emotion"
+    },
+    {
+      "id": "jest",
+      "type": "text",
+      "x": 87,
+      "y": 258,
+      "width": 150,
+      "height": 80,
+      "vv": {
+        "nodeType": "Jest",
+        "shape": "rectangle",
+        "fill": "#ef4444",
+        "stroke": "#ef4444"
+      },
+      "color": "1",
+      "text": "Jest + RTL"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "rspack",
+      "toNode": "react_app",
+      "stroke": "#eab308",
+      "vv": {
+        "edgeType": "builds",
+        "stroke": "#eab308"
+      },
+      "color": "3"
+    },
+    {
+      "id": "e2",
+      "fromNode": "react_app",
+      "toNode": "router",
+      "stroke": "#22c55e",
+      "vv": {
+        "edgeType": "uses",
+        "stroke": "#22c55e"
+      },
+      "color": "4"
+    },
+    {
+      "id": "e3",
+      "fromNode": "router",
+      "toNode": "views",
+      "stroke": "#06b6d4",
+      "vv": {
+        "edgeType": "renders",
+        "stroke": "#06b6d4"
+      },
+      "color": "5"
+    },
+    {
+      "id": "e4",
+      "fromNode": "views",
+      "toNode": "components",
+      "stroke": "#22c55e",
+      "vv": {
+        "edgeType": "uses",
+        "stroke": "#22c55e"
+      },
+      "color": "4"
+    },
+    {
+      "id": "e5",
+      "fromNode": "components",
+      "toNode": "core_components",
+      "stroke": "#22c55e",
+      "vv": {
+        "edgeType": "uses",
+        "stroke": "#22c55e"
+      },
+      "color": "4"
+    },
+    {
+      "id": "e6",
+      "fromNode": "views",
+      "toNode": "react_query",
+      "stroke": "#22c55e",
+      "vv": {
+        "edgeType": "uses",
+        "stroke": "#22c55e"
+      },
+      "color": "4"
+    },
+    {
+      "id": "e7",
+      "fromNode": "views",
+      "toNode": "reflux",
+      "stroke": "#22c55e",
+      "vv": {
+        "edgeType": "uses",
+        "stroke": "#22c55e"
+      },
+      "color": "4"
+    },
+    {
+      "id": "e8",
+      "fromNode": "react_query",
+      "toNode": "api_client",
+      "stroke": "#eab308",
+      "vv": {
+        "edgeType": "api_call",
+        "stroke": "#eab308"
+      },
+      "color": "3"
+    },
+    {
+      "id": "e9",
+      "fromNode": "actions",
+      "toNode": "reflux",
+      "stroke": "#f97316",
+      "vv": {
+        "edgeType": "state_update",
+        "stroke": "#f97316"
+      },
+      "color": "2"
+    },
+    {
+      "id": "e10",
+      "fromNode": "actions",
+      "toNode": "api_client",
+      "stroke": "#eab308",
+      "vv": {
+        "edgeType": "api_call",
+        "stroke": "#eab308"
+      },
+      "color": "3"
+    },
+    {
+      "id": "e11",
+      "fromNode": "api_client",
+      "toNode": "django_api",
+      "stroke": "#eab308",
+      "vv": {
+        "edgeType": "api_call",
+        "stroke": "#eab308"
+      },
+      "color": "3"
+    },
+    {
+      "id": "e12",
+      "fromNode": "views",
+      "toNode": "utils",
+      "stroke": "#22c55e",
+      "vv": {
+        "edgeType": "uses",
+        "stroke": "#22c55e"
+      },
+      "color": "4"
+    },
+    {
+      "id": "e13",
+      "fromNode": "components",
+      "toNode": "utils",
+      "stroke": "#22c55e",
+      "vv": {
+        "edgeType": "uses",
+        "stroke": "#22c55e"
+      },
+      "color": "4"
+    },
+    {
+      "id": "e14",
+      "fromNode": "views",
+      "toNode": "types",
+      "stroke": "#22c55e",
+      "vv": {
+        "edgeType": "uses",
+        "stroke": "#22c55e"
+      },
+      "color": "4"
+    },
+    {
+      "id": "e15",
+      "fromNode": "components",
+      "toNode": "types",
+      "stroke": "#22c55e",
+      "vv": {
+        "edgeType": "uses",
+        "stroke": "#22c55e"
+      },
+      "color": "4"
+    },
+    {
+      "id": "e16",
+      "fromNode": "components",
+      "toNode": "emotion",
+      "stroke": "#22c55e",
+      "vv": {
+        "edgeType": "styles",
+        "stroke": "#22c55e"
+      },
+      "color": "4"
+    },
+    {
+      "id": "e17",
+      "fromNode": "jest",
+      "toNode": "components",
+      "stroke": "#ef4444",
+      "vv": {
+        "edgeType": "tests",
+        "stroke": "#ef4444"
+      },
+      "color": "1"
+    },
+    {
+      "id": "e18",
+      "fromNode": "jest",
+      "toNode": "views",
+      "stroke": "#ef4444",
+      "vv": {
+        "edgeType": "tests",
+        "stroke": "#ef4444"
+      },
+      "color": "1"
+    }
+  ]
+}

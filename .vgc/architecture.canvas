@@ -1,0 +1,514 @@
+{
+  "vv": {
+    "name": "Sentry Architecture",
+    "version": "1.0.0",
+    "nodeTypes": {
+      "ClientSDK": {
+        "label": "Client SDKs",
+        "icon": "Globe",
+        "color": "1"
+      },
+      "Relay": {
+        "label": "Relay",
+        "icon": "Radio",
+        "color": "2"
+      },
+      "Kafka": {
+        "label": "Kafka",
+        "icon": "Workflow",
+        "color": "3"
+      },
+      "DjangoApp": {
+        "label": "Django Application",
+        "icon": "Server",
+        "color": "4"
+      },
+      "DjangoAPI": {
+        "label": "Django REST API",
+        "icon": "Code",
+        "color": "4"
+      },
+      "ReactApp": {
+        "label": "React Frontend",
+        "icon": "Layout",
+        "color": "5"
+      },
+      "CeleryWorker": {
+        "label": "Celery Workers",
+        "icon": "Cog",
+        "color": "2"
+      },
+      "PostgreSQL": {
+        "label": "PostgreSQL",
+        "icon": "Database",
+        "color": "6"
+      },
+      "Redis": {
+        "label": "Redis",
+        "icon": "Zap",
+        "color": "1"
+      },
+      "RabbitMQ": {
+        "label": "RabbitMQ",
+        "icon": "Shuffle",
+        "color": "3"
+      },
+      "Snuba": {
+        "label": "Snuba",
+        "icon": "Search",
+        "color": "4"
+      },
+      "ClickHouse": {
+        "label": "ClickHouse",
+        "icon": "HardDrive",
+        "color": "6"
+      },
+      "Symbolicator": {
+        "label": "Symbolicator",
+        "icon": "Bug",
+        "color": "2"
+      },
+      "GCP": {
+        "label": "Google Cloud",
+        "icon": "Cloud",
+        "color": "5"
+      }
+    },
+    "edgeTypes": {
+      "event_flow": {
+        "label": "Event Data",
+        "style": "solid",
+        "color": "1"
+      },
+      "message_stream": {
+        "label": "Message Stream",
+        "style": "animated",
+        "color": "3"
+      },
+      "data_query": {
+        "label": "Query",
+        "style": "solid",
+        "color": "6"
+      },
+      "cache": {
+        "label": "Cache",
+        "style": "dotted",
+        "color": "5"
+      },
+      "task_queue": {
+        "label": "Task Queue",
+        "style": "dashed",
+        "color": "2"
+      },
+      "api_call": {
+        "label": "API Call",
+        "style": "solid",
+        "color": "4"
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": "client_sdk",
+      "type": "text",
+      "x": 92,
+      "y": -379,
+      "width": 180,
+      "height": 80,
+      "color": "1",
+      "vv": {
+        "nodeType": "ClientSDK",
+        "shape": "rectangle",
+        "fill": "#ef4444",
+        "stroke": "#ef4444"
+      },
+      "text": "Client SDKs"
+    },
+    {
+      "id": "relay",
+      "type": "text",
+      "x": 94,
+      "y": -209,
+      "width": 180,
+      "height": 80,
+      "color": "2",
+      "vv": {
+        "nodeType": "Relay",
+        "shape": "rectangle",
+        "fill": "#f97316",
+        "stroke": "#f97316"
+      },
+      "text": "Relay"
+    },
+    {
+      "id": "kafka",
+      "type": "text",
+      "x": 92,
+      "y": -51,
+      "width": 180,
+      "height": 80,
+      "color": "3",
+      "vv": {
+        "nodeType": "Kafka",
+        "shape": "rectangle",
+        "fill": "#eab308",
+        "stroke": "#eab308"
+      },
+      "text": "Kafka"
+    },
+    {
+      "id": "django_app",
+      "type": "text",
+      "x": 64,
+      "y": 239,
+      "width": 200,
+      "height": 80,
+      "color": "4",
+      "vv": {
+        "nodeType": "DjangoApp",
+        "shape": "rectangle",
+        "fill": "#22c55e",
+        "stroke": "#22c55e"
+      },
+      "text": "Django Application"
+    },
+    {
+      "id": "django_api",
+      "type": "text",
+      "x": 326,
+      "y": -52,
+      "width": 200,
+      "height": 80,
+      "color": "4",
+      "vv": {
+        "nodeType": "DjangoAPI",
+        "shape": "rectangle",
+        "fill": "#22c55e",
+        "stroke": "#22c55e"
+      },
+      "text": "Django REST API"
+    },
+    {
+      "id": "react_app",
+      "type": "text",
+      "x": 335,
+      "y": -211,
+      "width": 180,
+      "height": 80,
+      "color": "5",
+      "vv": {
+        "nodeType": "ReactApp",
+        "shape": "rectangle",
+        "fill": "#06b6d4",
+        "stroke": "#06b6d4"
+      },
+      "text": "React Frontend"
+    },
+    {
+      "id": "celery",
+      "type": "text",
+      "x": 61,
+      "y": 716,
+      "width": 200,
+      "height": 80,
+      "color": "2",
+      "vv": {
+        "nodeType": "CeleryWorker",
+        "shape": "rectangle",
+        "fill": "#f97316",
+        "stroke": "#f97316"
+      },
+      "text": "Celery Workers"
+    },
+    {
+      "id": "postgres",
+      "type": "text",
+      "x": 497,
+      "y": 915,
+      "width": 180,
+      "height": 80,
+      "color": "6",
+      "vv": {
+        "nodeType": "PostgreSQL",
+        "shape": "cylinder",
+        "fill": "#a855f7",
+        "stroke": "#a855f7"
+      },
+      "text": "PostgreSQL"
+    },
+    {
+      "id": "redis",
+      "type": "text",
+      "x": -29,
+      "y": 522,
+      "width": 150,
+      "height": 80,
+      "color": "1",
+      "vv": {
+        "nodeType": "Redis",
+        "shape": "cylinder",
+        "fill": "#ef4444",
+        "stroke": "#ef4444"
+      },
+      "text": "Redis"
+    },
+    {
+      "id": "rabbitmq",
+      "type": "text",
+      "x": 92,
+      "y": 1018,
+      "width": 150,
+      "height": 80,
+      "color": "3",
+      "vv": {
+        "nodeType": "RabbitMQ",
+        "shape": "rectangle",
+        "fill": "#eab308",
+        "stroke": "#eab308"
+      },
+      "text": "RabbitMQ"
+    },
+    {
+      "id": "snuba",
+      "type": "text",
+      "x": 662,
+      "y": 530,
+      "width": 180,
+      "height": 80,
+      "color": "4",
+      "vv": {
+        "nodeType": "Snuba",
+        "shape": "rectangle",
+        "fill": "#22c55e",
+        "stroke": "#22c55e"
+      },
+      "text": "Snuba"
+    },
+    {
+      "id": "clickhouse",
+      "type": "text",
+      "x": 665,
+      "y": 718,
+      "width": 180,
+      "height": 80,
+      "color": "6",
+      "vv": {
+        "nodeType": "ClickHouse",
+        "shape": "cylinder",
+        "fill": "#a855f7",
+        "stroke": "#a855f7"
+      },
+      "text": "ClickHouse"
+    },
+    {
+      "id": "symbolicator",
+      "type": "text",
+      "x": 429,
+      "y": 526,
+      "width": 180,
+      "height": 80,
+      "color": "2",
+      "vv": {
+        "nodeType": "Symbolicator",
+        "shape": "rectangle",
+        "fill": "#f97316",
+        "stroke": "#f97316"
+      },
+      "text": "Symbolicator"
+    },
+    {
+      "id": "gcp",
+      "type": "text",
+      "x": 256,
+      "y": 922,
+      "width": 180,
+      "height": 80,
+      "color": "5",
+      "vv": {
+        "nodeType": "GCP",
+        "shape": "ellipse",
+        "fill": "#06b6d4",
+        "stroke": "#06b6d4"
+      },
+      "text": "Google Cloud"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "client_sdk",
+      "toNode": "relay",
+      "color": "1",
+      "vv": {
+        "edgeType": "event_flow",
+        "stroke": "#ef4444"
+      },
+      "stroke": "#ef4444"
+    },
+    {
+      "id": "e2",
+      "fromNode": "relay",
+      "toNode": "kafka",
+      "color": "1",
+      "vv": {
+        "edgeType": "event_flow",
+        "stroke": "#ef4444"
+      },
+      "stroke": "#ef4444"
+    },
+    {
+      "id": "e3",
+      "fromNode": "kafka",
+      "toNode": "django_app",
+      "color": "3",
+      "vv": {
+        "edgeType": "message_stream",
+        "stroke": "#eab308"
+      },
+      "stroke": "#eab308"
+    },
+    {
+      "id": "e4",
+      "fromNode": "django_app",
+      "toNode": "postgres",
+      "color": "6",
+      "vv": {
+        "edgeType": "data_query",
+        "stroke": "#a855f7"
+      },
+      "stroke": "#a855f7"
+    },
+    {
+      "id": "e5",
+      "fromNode": "django_app",
+      "toNode": "redis",
+      "color": "5",
+      "vv": {
+        "edgeType": "cache",
+        "stroke": "#06b6d4"
+      },
+      "stroke": "#06b6d4"
+    },
+    {
+      "id": "e6",
+      "fromNode": "django_app",
+      "toNode": "celery",
+      "color": "2",
+      "vv": {
+        "edgeType": "task_queue",
+        "stroke": "#f97316"
+      },
+      "stroke": "#f97316"
+    },
+    {
+      "id": "e7",
+      "fromNode": "celery",
+      "toNode": "rabbitmq",
+      "color": "2",
+      "vv": {
+        "edgeType": "task_queue",
+        "stroke": "#f97316"
+      },
+      "stroke": "#f97316"
+    },
+    {
+      "id": "e8",
+      "fromNode": "react_app",
+      "toNode": "django_api",
+      "color": "4",
+      "vv": {
+        "edgeType": "api_call",
+        "stroke": "#22c55e"
+      },
+      "stroke": "#22c55e"
+    },
+    {
+      "id": "e9",
+      "fromNode": "django_api",
+      "toNode": "django_app",
+      "color": "4",
+      "vv": {
+        "edgeType": "api_call",
+        "stroke": "#22c55e"
+      },
+      "stroke": "#22c55e"
+    },
+    {
+      "id": "e10",
+      "fromNode": "kafka",
+      "toNode": "snuba",
+      "color": "3",
+      "vv": {
+        "edgeType": "message_stream",
+        "stroke": "#eab308"
+      },
+      "stroke": "#eab308"
+    },
+    {
+      "id": "e11",
+      "fromNode": "snuba",
+      "toNode": "clickhouse",
+      "color": "6",
+      "vv": {
+        "edgeType": "data_query",
+        "stroke": "#a855f7"
+      },
+      "stroke": "#a855f7"
+    },
+    {
+      "id": "e12",
+      "fromNode": "django_app",
+      "toNode": "snuba",
+      "color": "6",
+      "vv": {
+        "edgeType": "data_query",
+        "stroke": "#a855f7"
+      },
+      "stroke": "#a855f7"
+    },
+    {
+      "id": "e13",
+      "fromNode": "django_app",
+      "toNode": "symbolicator",
+      "color": "4",
+      "vv": {
+        "edgeType": "api_call",
+        "stroke": "#22c55e"
+      },
+      "stroke": "#22c55e"
+    },
+    {
+      "id": "e14",
+      "fromNode": "django_app",
+      "toNode": "gcp",
+      "color": "4",
+      "vv": {
+        "edgeType": "api_call",
+        "stroke": "#22c55e"
+      },
+      "stroke": "#22c55e"
+    },
+    {
+      "id": "e15",
+      "fromNode": "celery",
+      "toNode": "postgres",
+      "color": "6",
+      "vv": {
+        "edgeType": "data_query",
+        "stroke": "#a855f7"
+      },
+      "stroke": "#a855f7"
+    },
+    {
+      "id": "e16",
+      "fromNode": "celery",
+      "toNode": "gcp",
+      "color": "4",
+      "vv": {
+        "edgeType": "api_call",
+        "stroke": "#22c55e"
+      },
+      "stroke": "#22c55e"
+    }
+  ]
+}
