@@ -4,92 +4,92 @@ name: "Sentry Architecture Components"
 nodeComponents:
   # Frontend Layer
   ReactApp:
-    label: "React Frontend"
+    defaultLabel: "React Frontend"
     icon: "Layout"
     color: "5"
     description: "Frontend application (static/)"
 
   # Backend Layer
   DjangoApp:
-    label: "Django Application"
+    defaultLabel: "Django Application"
     icon: "Server"
     color: "4"
     description: "Main Sentry Django app (src/sentry/)"
 
   DjangoAPI:
-    label: "Django REST API"
+    defaultLabel: "Django REST API"
     icon: "Code"
     color: "4"
     description: "REST API endpoints (src/sentry/api/)"
 
   # Task Processing
   CeleryWorker:
-    label: "Celery Workers"
+    defaultLabel: "Celery Workers"
     icon: "Cog"
     color: "2"
     description: "Background task processing"
 
   # Databases
   PostgreSQL:
-    label: "PostgreSQL"
+    defaultLabel: "PostgreSQL"
     icon: "Database"
     color: "6"
     description: "Primary relational database"
 
   Redis:
-    label: "Redis"
+    defaultLabel: "Redis"
     icon: "Zap"
     color: "1"
     description: "Caching and queuing"
 
   ClickHouse:
-    label: "ClickHouse"
+    defaultLabel: "ClickHouse"
     icon: "HardDrive"
     color: "6"
     description: "Event data storage (via Snuba)"
 
   # Message Queues
   Kafka:
-    label: "Kafka"
+    defaultLabel: "Kafka"
     icon: "Workflow"
     color: "3"
     description: "Event streaming platform"
 
   RabbitMQ:
-    label: "RabbitMQ"
+    defaultLabel: "RabbitMQ"
     icon: "Shuffle"
     color: "3"
     description: "Message broker for Celery"
 
   # Services
   Relay:
-    label: "Relay"
+    defaultLabel: "Relay"
     icon: "Radio"
     color: "2"
     description: "Event ingestion service"
 
   Snuba:
-    label: "Snuba"
+    defaultLabel: "Snuba"
     icon: "Search"
     color: "4"
     description: "Event query service"
 
   Symbolicator:
-    label: "Symbolicator"
+    defaultLabel: "Symbolicator"
     icon: "Bug"
     color: "2"
     description: "Debug symbol processing"
 
   # Cloud Services
   GCP:
-    label: "Google Cloud"
+    defaultLabel: "Google Cloud"
     icon: "Cloud"
     color: "5"
     description: "Bigtable, Pub/Sub, Storage, KMS"
 
   # External
   ClientSDK:
-    label: "Client SDKs"
+    defaultLabel: "Client SDKs"
     icon: "Globe"
     color: "1"
     description: "Application instrumentation"

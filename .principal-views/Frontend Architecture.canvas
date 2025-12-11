@@ -1,5 +1,5 @@
 {
-  "vv": {
+  "pv": {
     "name": "Frontend Architecture",
     "version": "1.0.0",
     "nodeTypes": {
@@ -125,7 +125,7 @@
       "y": -35,
       "width": 180,
       "height": 80,
-      "vv": {
+      "pv": {
         "nodeType": "Rspack",
         "shape": "rectangle",
         "fill": "#eab308",
@@ -141,7 +141,7 @@
       "y": 140,
       "width": 180,
       "height": 80,
-      "vv": {
+      "pv": {
         "nodeType": "ReactApp",
         "shape": "rectangle",
         "fill": "#06b6d4",
@@ -157,7 +157,7 @@
       "y": 305,
       "width": 180,
       "height": 80,
-      "vv": {
+      "pv": {
         "nodeType": "Router",
         "shape": "rectangle",
         "fill": "#06b6d4",
@@ -173,7 +173,7 @@
       "y": 462,
       "width": 180,
       "height": 80,
-      "vv": {
+      "pv": {
         "nodeType": "Views",
         "shape": "rectangle",
         "fill": "#06b6d4",
@@ -189,7 +189,7 @@
       "y": 639,
       "width": 180,
       "height": 80,
-      "vv": {
+      "pv": {
         "nodeType": "Components",
         "shape": "rectangle",
         "fill": "#06b6d4",
@@ -205,7 +205,7 @@
       "y": 833,
       "width": 200,
       "height": 80,
-      "vv": {
+      "pv": {
         "nodeType": "CoreComponents",
         "shape": "rectangle",
         "fill": "#22c55e",
@@ -221,7 +221,7 @@
       "y": 686,
       "width": 180,
       "height": 80,
-      "vv": {
+      "pv": {
         "nodeType": "ReactQuery",
         "shape": "rectangle",
         "fill": "#f97316",
@@ -237,7 +237,7 @@
       "y": 1189,
       "width": 180,
       "height": 80,
-      "vv": {
+      "pv": {
         "nodeType": "Reflux",
         "shape": "rectangle",
         "fill": "#f97316",
@@ -253,7 +253,7 @@
       "y": 932,
       "width": 180,
       "height": 80,
-      "vv": {
+      "pv": {
         "nodeType": "Actions",
         "shape": "rectangle",
         "fill": "#f97316",
@@ -269,7 +269,7 @@
       "y": 1184,
       "width": 180,
       "height": 80,
-      "vv": {
+      "pv": {
         "nodeType": "APIClient",
         "shape": "rectangle",
         "fill": "#eab308",
@@ -285,7 +285,7 @@
       "y": 1321,
       "width": 180,
       "height": 80,
-      "vv": {
+      "pv": {
         "nodeType": "DjangoAPI",
         "shape": "rectangle",
         "fill": "#22c55e",
@@ -301,7 +301,7 @@
       "y": 849,
       "width": 150,
       "height": 80,
-      "vv": {
+      "pv": {
         "nodeType": "Utils",
         "shape": "rectangle",
         "fill": "#a855f7",
@@ -317,7 +317,7 @@
       "y": 696,
       "width": 150,
       "height": 80,
-      "vv": {
+      "pv": {
         "nodeType": "Types",
         "shape": "rectangle",
         "fill": "#a855f7",
@@ -333,7 +333,7 @@
       "y": 833,
       "width": 150,
       "height": 80,
-      "vv": {
+      "pv": {
         "nodeType": "Emotion",
         "shape": "rectangle",
         "fill": "#22c55e",
@@ -349,7 +349,7 @@
       "y": 258,
       "width": 150,
       "height": 80,
-      "vv": {
+      "pv": {
         "nodeType": "Jest",
         "shape": "rectangle",
         "fill": "#ef4444",
@@ -364,10 +364,8 @@
       "id": "e1",
       "fromNode": "rspack",
       "toNode": "react_app",
-      "stroke": "#eab308",
-      "vv": {
-        "edgeType": "builds",
-        "stroke": "#eab308"
+      "pv": {
+        "edgeType": "builds"
       },
       "color": "3"
     },
@@ -375,10 +373,8 @@
       "id": "e2",
       "fromNode": "react_app",
       "toNode": "router",
-      "stroke": "#22c55e",
-      "vv": {
-        "edgeType": "uses",
-        "stroke": "#22c55e"
+      "pv": {
+        "edgeType": "uses"
       },
       "color": "4"
     },
@@ -386,10 +382,8 @@
       "id": "e3",
       "fromNode": "router",
       "toNode": "views",
-      "stroke": "#06b6d4",
-      "vv": {
-        "edgeType": "renders",
-        "stroke": "#06b6d4"
+      "pv": {
+        "edgeType": "renders"
       },
       "color": "5"
     },
@@ -397,10 +391,8 @@
       "id": "e4",
       "fromNode": "views",
       "toNode": "components",
-      "stroke": "#22c55e",
-      "vv": {
-        "edgeType": "uses",
-        "stroke": "#22c55e"
+      "pv": {
+        "edgeType": "uses"
       },
       "color": "4"
     },
@@ -408,10 +400,8 @@
       "id": "e5",
       "fromNode": "components",
       "toNode": "core_components",
-      "stroke": "#22c55e",
-      "vv": {
-        "edgeType": "uses",
-        "stroke": "#22c55e"
+      "pv": {
+        "edgeType": "uses"
       },
       "color": "4"
     },
@@ -419,10 +409,8 @@
       "id": "e6",
       "fromNode": "views",
       "toNode": "react_query",
-      "stroke": "#22c55e",
-      "vv": {
-        "edgeType": "uses",
-        "stroke": "#22c55e"
+      "pv": {
+        "edgeType": "uses"
       },
       "color": "4"
     },
@@ -430,10 +418,8 @@
       "id": "e7",
       "fromNode": "views",
       "toNode": "reflux",
-      "stroke": "#22c55e",
-      "vv": {
-        "edgeType": "uses",
-        "stroke": "#22c55e"
+      "pv": {
+        "edgeType": "uses"
       },
       "color": "4"
     },
@@ -441,10 +427,8 @@
       "id": "e8",
       "fromNode": "react_query",
       "toNode": "api_client",
-      "stroke": "#eab308",
-      "vv": {
-        "edgeType": "api_call",
-        "stroke": "#eab308"
+      "pv": {
+        "edgeType": "api_call"
       },
       "color": "3"
     },
@@ -452,10 +436,8 @@
       "id": "e9",
       "fromNode": "actions",
       "toNode": "reflux",
-      "stroke": "#f97316",
-      "vv": {
-        "edgeType": "state_update",
-        "stroke": "#f97316"
+      "pv": {
+        "edgeType": "state_update"
       },
       "color": "2"
     },
@@ -463,10 +445,8 @@
       "id": "e10",
       "fromNode": "actions",
       "toNode": "api_client",
-      "stroke": "#eab308",
-      "vv": {
-        "edgeType": "api_call",
-        "stroke": "#eab308"
+      "pv": {
+        "edgeType": "api_call"
       },
       "color": "3"
     },
@@ -474,10 +454,8 @@
       "id": "e11",
       "fromNode": "api_client",
       "toNode": "django_api",
-      "stroke": "#eab308",
-      "vv": {
-        "edgeType": "api_call",
-        "stroke": "#eab308"
+      "pv": {
+        "edgeType": "api_call"
       },
       "color": "3"
     },
@@ -485,10 +463,8 @@
       "id": "e12",
       "fromNode": "views",
       "toNode": "utils",
-      "stroke": "#22c55e",
-      "vv": {
-        "edgeType": "uses",
-        "stroke": "#22c55e"
+      "pv": {
+        "edgeType": "uses"
       },
       "color": "4"
     },
@@ -496,10 +472,8 @@
       "id": "e13",
       "fromNode": "components",
       "toNode": "utils",
-      "stroke": "#22c55e",
-      "vv": {
-        "edgeType": "uses",
-        "stroke": "#22c55e"
+      "pv": {
+        "edgeType": "uses"
       },
       "color": "4"
     },
@@ -507,10 +481,8 @@
       "id": "e14",
       "fromNode": "views",
       "toNode": "types",
-      "stroke": "#22c55e",
-      "vv": {
-        "edgeType": "uses",
-        "stroke": "#22c55e"
+      "pv": {
+        "edgeType": "uses"
       },
       "color": "4"
     },
@@ -518,10 +490,8 @@
       "id": "e15",
       "fromNode": "components",
       "toNode": "types",
-      "stroke": "#22c55e",
-      "vv": {
-        "edgeType": "uses",
-        "stroke": "#22c55e"
+      "pv": {
+        "edgeType": "uses"
       },
       "color": "4"
     },
@@ -529,10 +499,8 @@
       "id": "e16",
       "fromNode": "components",
       "toNode": "emotion",
-      "stroke": "#22c55e",
-      "vv": {
-        "edgeType": "styles",
-        "stroke": "#22c55e"
+      "pv": {
+        "edgeType": "styles"
       },
       "color": "4"
     },
@@ -540,10 +508,8 @@
       "id": "e17",
       "fromNode": "jest",
       "toNode": "components",
-      "stroke": "#ef4444",
-      "vv": {
-        "edgeType": "tests",
-        "stroke": "#ef4444"
+      "pv": {
+        "edgeType": "tests"
       },
       "color": "1"
     },
@@ -551,10 +517,8 @@
       "id": "e18",
       "fromNode": "jest",
       "toNode": "views",
-      "stroke": "#ef4444",
-      "vv": {
-        "edgeType": "tests",
-        "stroke": "#ef4444"
+      "pv": {
+        "edgeType": "tests"
       },
       "color": "1"
     }

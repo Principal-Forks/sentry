@@ -1,5 +1,5 @@
 {
-  "vv": {
+  "pv": {
     "name": "Backend Architecture",
     "version": "1.0.0",
     "nodeTypes": {
@@ -120,7 +120,7 @@
       "y": -67,
       "width": 180,
       "height": 80,
-      "vv": {
+      "pv": {
         "nodeType": "Relay",
         "shape": "rectangle",
         "fill": "#f97316",
@@ -136,7 +136,7 @@
       "y": 127,
       "width": 180,
       "height": 80,
-      "vv": {
+      "pv": {
         "nodeType": "Kafka",
         "shape": "rectangle",
         "fill": "#eab308",
@@ -152,7 +152,7 @@
       "y": -64,
       "width": 180,
       "height": 80,
-      "vv": {
+      "pv": {
         "nodeType": "Middleware",
         "shape": "rectangle",
         "fill": "#22c55e",
@@ -168,7 +168,7 @@
       "y": 119,
       "width": 180,
       "height": 80,
-      "vv": {
+      "pv": {
         "nodeType": "DjangoAPI",
         "shape": "rectangle",
         "fill": "#22c55e",
@@ -184,7 +184,7 @@
       "y": 319,
       "width": 180,
       "height": 80,
-      "vv": {
+      "pv": {
         "nodeType": "DjangoApp",
         "shape": "rectangle",
         "fill": "#22c55e",
@@ -200,7 +200,7 @@
       "y": 637,
       "width": 180,
       "height": 80,
-      "vv": {
+      "pv": {
         "nodeType": "DjangoModels",
         "shape": "rectangle",
         "fill": "#22c55e",
@@ -216,7 +216,7 @@
       "y": 627,
       "width": 180,
       "height": 80,
-      "vv": {
+      "pv": {
         "nodeType": "Integrations",
         "shape": "rectangle",
         "fill": "#22c55e",
@@ -232,7 +232,7 @@
       "y": 562,
       "width": 180,
       "height": 80,
-      "vv": {
+      "pv": {
         "nodeType": "CeleryWorker",
         "shape": "rectangle",
         "fill": "#f97316",
@@ -248,7 +248,7 @@
       "y": 806,
       "width": 180,
       "height": 80,
-      "vv": {
+      "pv": {
         "nodeType": "PostgreSQL",
         "shape": "cylinder",
         "fill": "#a855f7",
@@ -264,7 +264,7 @@
       "y": 871,
       "width": 150,
       "height": 80,
-      "vv": {
+      "pv": {
         "nodeType": "Redis",
         "shape": "cylinder",
         "fill": "#ef4444",
@@ -280,7 +280,7 @@
       "y": 906,
       "width": 150,
       "height": 80,
-      "vv": {
+      "pv": {
         "nodeType": "RabbitMQ",
         "shape": "rectangle",
         "fill": "#eab308",
@@ -296,7 +296,7 @@
       "y": 500,
       "width": 180,
       "height": 80,
-      "vv": {
+      "pv": {
         "nodeType": "Snuba",
         "shape": "rectangle",
         "fill": "#22c55e",
@@ -312,7 +312,7 @@
       "y": 638,
       "width": 180,
       "height": 80,
-      "vv": {
+      "pv": {
         "nodeType": "ClickHouse",
         "shape": "cylinder",
         "fill": "#a855f7",
@@ -328,7 +328,7 @@
       "y": 633,
       "width": 180,
       "height": 80,
-      "vv": {
+      "pv": {
         "nodeType": "Symbolicator",
         "shape": "rectangle",
         "fill": "#f97316",
@@ -344,7 +344,7 @@
       "y": 971,
       "width": 180,
       "height": 80,
-      "vv": {
+      "pv": {
         "nodeType": "GCP",
         "shape": "ellipse",
         "fill": "#06b6d4",
@@ -359,199 +359,163 @@
       "id": "e1",
       "fromNode": "relay",
       "toNode": "kafka",
-      "vv": {
-        "edgeType": "event_flow",
-        "stroke": "#ef4444"
+      "pv": {
+        "edgeType": "event_flow"
       },
-      "color": "1",
-      "stroke": "#ef4444"
+      "color": "1"
     },
     {
       "id": "e2",
       "fromNode": "kafka",
       "toNode": "django_app",
-      "vv": {
-        "edgeType": "message_stream",
-        "stroke": "#eab308"
+      "pv": {
+        "edgeType": "message_stream"
       },
-      "color": "3",
-      "stroke": "#eab308"
+      "color": "3"
     },
     {
       "id": "e3",
       "fromNode": "kafka",
       "toNode": "snuba",
-      "vv": {
-        "edgeType": "message_stream",
-        "stroke": "#eab308"
+      "pv": {
+        "edgeType": "message_stream"
       },
-      "color": "3",
-      "stroke": "#eab308"
+      "color": "3"
     },
     {
       "id": "e4",
       "fromNode": "middleware",
       "toNode": "django_api",
-      "vv": {
-        "edgeType": "api_call",
-        "stroke": "#22c55e"
+      "pv": {
+        "edgeType": "api_call"
       },
-      "color": "4",
-      "stroke": "#22c55e"
+      "color": "4"
     },
     {
       "id": "e5",
       "fromNode": "django_api",
       "toNode": "django_app",
-      "vv": {
-        "edgeType": "api_call",
-        "stroke": "#22c55e"
+      "pv": {
+        "edgeType": "api_call"
       },
-      "color": "4",
-      "stroke": "#22c55e"
+      "color": "4"
     },
     {
       "id": "e6",
       "fromNode": "django_app",
       "toNode": "django_models",
-      "vv": {
-        "edgeType": "api_call",
-        "stroke": "#22c55e"
+      "pv": {
+        "edgeType": "api_call"
       },
-      "color": "4",
-      "stroke": "#22c55e"
+      "color": "4"
     },
     {
       "id": "e7",
       "fromNode": "django_models",
       "toNode": "postgres",
-      "vv": {
-        "edgeType": "data_query",
-        "stroke": "#a855f7"
+      "pv": {
+        "edgeType": "data_query"
       },
-      "color": "6",
-      "stroke": "#a855f7"
+      "color": "6"
     },
     {
       "id": "e8",
       "fromNode": "django_app",
       "toNode": "redis",
-      "vv": {
-        "edgeType": "cache",
-        "stroke": "#06b6d4"
+      "pv": {
+        "edgeType": "cache"
       },
-      "color": "5",
-      "stroke": "#06b6d4"
+      "color": "5"
     },
     {
       "id": "e9",
       "fromNode": "django_app",
       "toNode": "celery",
-      "vv": {
-        "edgeType": "task_queue",
-        "stroke": "#f97316"
+      "pv": {
+        "edgeType": "task_queue"
       },
-      "color": "2",
-      "stroke": "#f97316"
+      "color": "2"
     },
     {
       "id": "e10",
       "fromNode": "celery",
       "toNode": "rabbitmq",
-      "vv": {
-        "edgeType": "task_queue",
-        "stroke": "#f97316"
+      "pv": {
+        "edgeType": "task_queue"
       },
-      "color": "2",
-      "stroke": "#f97316"
+      "color": "2"
     },
     {
       "id": "e11",
       "fromNode": "celery",
       "toNode": "redis",
-      "vv": {
-        "edgeType": "cache",
-        "stroke": "#06b6d4"
+      "pv": {
+        "edgeType": "cache"
       },
-      "color": "5",
-      "stroke": "#06b6d4"
+      "color": "5"
     },
     {
       "id": "e12",
       "fromNode": "celery",
       "toNode": "postgres",
-      "vv": {
-        "edgeType": "data_query",
-        "stroke": "#a855f7"
+      "pv": {
+        "edgeType": "data_query"
       },
-      "color": "6",
-      "stroke": "#a855f7"
+      "color": "6"
     },
     {
       "id": "e13",
       "fromNode": "django_app",
       "toNode": "snuba",
-      "vv": {
-        "edgeType": "data_query",
-        "stroke": "#a855f7"
+      "pv": {
+        "edgeType": "data_query"
       },
-      "color": "6",
-      "stroke": "#a855f7"
+      "color": "6"
     },
     {
       "id": "e14",
       "fromNode": "snuba",
       "toNode": "clickhouse",
-      "vv": {
-        "edgeType": "data_query",
-        "stroke": "#a855f7"
+      "pv": {
+        "edgeType": "data_query"
       },
-      "color": "6",
-      "stroke": "#a855f7"
+      "color": "6"
     },
     {
       "id": "e15",
       "fromNode": "django_app",
       "toNode": "integrations",
-      "vv": {
-        "edgeType": "api_call",
-        "stroke": "#22c55e"
+      "pv": {
+        "edgeType": "api_call"
       },
-      "color": "4",
-      "stroke": "#22c55e"
+      "color": "4"
     },
     {
       "id": "e16",
       "fromNode": "django_app",
       "toNode": "symbolicator",
-      "vv": {
-        "edgeType": "api_call",
-        "stroke": "#22c55e"
+      "pv": {
+        "edgeType": "api_call"
       },
-      "color": "4",
-      "stroke": "#22c55e"
+      "color": "4"
     },
     {
       "id": "e17",
       "fromNode": "django_app",
       "toNode": "gcp",
-      "vv": {
-        "edgeType": "api_call",
-        "stroke": "#22c55e"
+      "pv": {
+        "edgeType": "api_call"
       },
-      "color": "4",
-      "stroke": "#22c55e"
+      "color": "4"
     },
     {
       "id": "e18",
       "fromNode": "celery",
       "toNode": "gcp",
-      "vv": {
-        "edgeType": "api_call",
-        "stroke": "#22c55e"
+      "pv": {
+        "edgeType": "api_call"
       },
-      "color": "4",
-      "stroke": "#22c55e"
+      "color": "4"
     }
   ]
 }
